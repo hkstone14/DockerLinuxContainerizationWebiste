@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+        img {
+            max-width: 50%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="bg-dark">
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+               aria-expanded="false">Dockers</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item " href="Virtualization.html">Virtualization</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item active" href="containerization.html">containerization</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item " href="VmAndCrCompare.html">Virtualization and Containerization compare</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Packets and Routing.html">Packets and Routing</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="DNS.html">DNS</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="HTTP and HTTPS Protocols.html">HTTP and HTTPS Protocols</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="W3C.html">W3C</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="HTML and CSS.html">HTML and CSS</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="About.html">About us</a>
+        </li>
+    </ul>
+</div>
+<div class="container p-3 my-3 border" style="text-align: justify;">
+    <div class="bg-dark text-white" style="padding-left: 1%;"><h5>containerization</h5></div>
+    <p><strong>What is containerization?</strong></p>
+    <p>
+        Containerization is an application or system distribution method that isolates the application or system and its
+        dependencies from the underlying infrastructure. It is an OS-level virtualization that allows users to deploy
+        and run distributed applications or systems in containers without launching an entire virtual machine for each
+        app. Application containers include all of the runtime components – such as configuration files, binaries and
+        libraries – needed to run the app. Multiple containers can run on a single host and access the same OS kernel
+        via APIs. System containers, also called infrastructure containers, include the host operating system,
+        application libraries and execution code. System containers can host application containers. Containers work on
+        bare-metal systems, cloud instances and virtual machines, across Linux and some Windows and Mac OSes. A host
+        machine could have multiple OSes supporting multiple containers – all sharing the same physical resources.
+    </p>
+    <div class="class-img-margin">
+
+        <img src="images/containers-2.png" class="mx-auto d-block">
+    </div>
+    <p><strong>How to containerization work</strong></p>
+    <p>
+        Application containerization is like a lightweight alternative to full machine virtualization. It involves
+        encapsulating an application in a container with its own operating environment so the application can run on any
+        physical or virtual machine without dependency worries. Each container operates independently of others and uses
+        minimal resources from the host OS. Containers create a safe space for app code to consume host resources
+        without depending on (or conflicting with) other applications using the same OS. Application containers consume
+        fewer resources than virtual machines because containers share resources without a full operating system under
+        each app. Containers can scale up microservices to meet rising demand for an application component and
+        distribute the load.
+    </p>
+    <div class="class-img-margin">
+
+        <img src="images/container 3.png" class="mx-auto d-block">
+    </div>
+    <p><strong>Benefits of containerization</strong></p>
+    <p>
+       <ul>Enterprises use containerization to save development time, speed application deployment, optimize existing
+          resources and improve IT flexibility.</ul>
+    <ul>Containerization allows applications to run reliably and predictably when
+        moved from one computing environment to another, increasing portability.</ul>
+    <ul>  Compared to traditional virtualization
+        and physical application hosting, containerization increases IT efficiency for memory, CPU and storage.</ul>
+    <ul>Without the overhead required by VMs, many more application containers can be supported on the same infrastructure.</ul>
+     <ul>Cloud providers offer Containers-as-a-Service (CaaS) for users to manage and deploy containers, Linux
+        applications and clusters through container-based virtualization.</ul>
+    <ul>SUSE CaaS Platform is an enterprise-class
+        container management solution that enables IT and DevOps professionals to manage and scale container-based
+        applications and services for private or public clouds.</ul>
+    </p>
+
+
+</div>
+    <div class="bg-dark" style="width: 100%">
+        <footer class="container" style="width: 100%">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p class="text-white">&copy; 2020 Company, Inc. &middot; Privacy &middot; Terms
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
