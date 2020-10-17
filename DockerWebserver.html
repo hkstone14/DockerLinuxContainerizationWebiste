@@ -78,97 +78,97 @@
              style="width: 1500px; height:400px" alt="...">
     </div>
     <br>
-<!--    <div class="class-card_div-margin">-->
-<!--        <h1>Setup a Web server using Docker</h1>-->
-<!--        <hr>-->
-<!--        <p>-->
-<!--            Before setting up a server we must know the real meaning or definition of a server. So, the Server is a-->
-<!--            program that provides the client with any kind of services. For example, a web server provides our websites,-->
-<!--            a database server provides us data. This means every server has work to do and for every different work we-->
-<!--            want them to do, we have to choose different servers.-->
-<!--        </p>-->
-<!--        <h5><strong>Pre-requisite:</strong></h5>-->
-<!--        <ul>-->
-<!--            <li>Linux Operating system Like Ubuntu, Redhat, Kali Linux</li>-->
-<!--            <li>Internet connectivity</li>-->
-<!--            <li>Docker installed on system</li>-->
-<!--        </ul>-->
-<!--        <h5><strong>3 steps to configure a Web Server</strong></h5>-->
-<!--        <ol>-->
-<!--            <li>Install the Server Program</li>-->
-<!--            <li>Configuration of Server</li>-->
-<!--            <li>Start the server</li>-->
-<!--        </ol>-->
-<!--        <p>-->
-<!--        <h5><strong>Installing the Server Software</strong></h5>-->
-<!--        <h6><strong>1. Install Docker Engine</strong></h6>-->
-<!--        After the installation, you can run following command to test your installation.-->
-<!--        <pre>docker run hello-world</pre>-->
-<!--        <img src="./images/hello-world.PNG"-->
-<!--             style="width: 1500px; height:400px" alt="...">-->
-<!--        </p>-->
-<!--        <p>-->
-<!--        <h6><strong>2. Pull an Ubuntu image from Dockerhub</strong></h6>-->
-<!--        <pre>docker pull ubuntu</pre>-->
-<!--        <img src="./images/Ubuntu-image.PNG"-->
-<!--             style="width: 1500px; height:200px" alt="...">-->
-<!--        </p>-->
-<!--        <p>-->
-<!--        <h6><strong>3. Run the ubuntu docker image</strong></h6>-->
-<!--        <pre>docker run -it ubuntu:latest /bin/bash</pre>-->
-<!--        <img src="./images/docker-run.PNG"-->
-<!--             style="width: 1500px; height:100px" alt="...">-->
-<!--        </p>-->
-<!--        <p>-->
-<!--        <h6><strong>4. Install apache2</strong></h6>-->
-<!--        <pre>apt-get install apache2</pre>-->
-<!--        <img src="./images/Insatlled_Apache2.PNG"-->
-<!--             style="width: 1500px; height:300px" alt="...">-->
-<!--        </p>-->
-<!--        <p>-->
-<!--        <h6><strong>5. Install vim editor</strong></h6>-->
-<!--        <pre>apt-get install vim</pre>-->
-<!--        <img src="./images/Vim-install.PNG"-->
-<!--             style="width: 1500px; height:200px" alt="...">-->
-<!--        </p>-->
-<!--        <p>-->
-<!--        <h5><strong>Configuring the Web server</strong></h5>-->
-<!--        Actually the server is already been configured and now its the time to update or make a website over this-->
-<!--        server.Server website can be accessed using the IP address of the host.-->
-<!--        Setup website.-->
-<!--        <h6><strong>1. Share the data between Docker container and Host</strong></h6>-->
-<!--        Using following command we can share the data between docker container and host.-->
-<!--        <pre>docker run -it -p 127.0.0.1:80:80 -v F:\Docker_tutorial\local_dir:/var/www/html ubuntu-my_apache2 /bin/bash</pre>-->
-<!--        <ul>-->
-<!--            <li>-it : log into an interactive shell</li>-->
-<!--            <li> -p : expose an port of Docker container</li>-->
-<!--            <li> -v : bind a host directory to Docker container</li>-->
-<!--        </ul>-->
-<!--        <img src="./images/path_between_container&Host.PNG"-->
-<!--             style="width: 1500px; height:50px" alt="...">-->
-<!--        </p>-->
-<!--        <p>-->
-<!--            <h6><strong>2. vi Editor in UNIX</strong></h6>-->
-<!--            Go to html directory and create an index.html file using following commands.-->
-<!--            <pre>cd /var/www/html</pre>-->
-<!--            <img src="./images/go_to_index_html.PNG"-->
-<!--             style="width: 1500px; height:100px" alt="..."><br><br>-->
-<!--            <pre>vi index.html</pre>-->
-<!--            <img src="./images/html_file.PNG"-->
-<!--             style="width: 1500px; height:400px" alt="...">-->
-<!--        </p>-->
-<!--        <p>-->
-<!--            <h5><strong>Start the server</strong></h5>-->
-<!--            <pre>/etc/init.d/apache2 restart</pre>-->
-<!--            <img src="./images/Restart_apache2.PNG"-->
-<!--             style="width: 1500px; height:100px" alt="..."><br><br>-->
-<!--            <img src="./images/website_host.PNG"-->
-<!--             style="width: 1500px; height:500px" alt="...">-->
+    <div class="class-card_div-margin">
+        <h1>Setup a Web server using Docker</h1>
+        <hr>
+        <p>
+            Before setting up a server we must know the real meaning or definition of a server. So, the Server is a
+            program that provides the client with any kind of services. For example, a web server provides our websites,
+            a database server provides us data. This means every server has work to do and for every different work we
+            want them to do, we have to choose different servers.
+        </p>
+        <h5><strong>Pre-requisite:</strong></h5>
+        <ul>
+            <li>Linux Operating system Like Ubuntu, Redhat, Kali Linux</li>
+            <li>Internet connectivity</li>
+            <li>Docker installed on system</li>
+        </ul>
+        <h5><strong>3 steps to configure a Web Server</strong></h5>
+        <ol>
+            <li>Install the Server Program</li>
+            <li>Configuration of Server</li>
+            <li>Start the server</li>
+        </ol>
+        <p>
+        <h5><strong>Installing the Server Software</strong></h5>
+        <h6><strong>1. Install Docker Engine</strong></h6>
+        After the installation, you can run following command to test your installation.
+        <pre>docker run hello-world</pre>
+        <img src="./images/hello-world.PNG"
+             style="width: 1500px; height:400px" alt="...">
+        </p>
+        <p>
+        <h6><strong>2. Pull an Ubuntu image from Dockerhub</strong></h6>
+        <pre>docker pull ubuntu</pre>
+        <img src="./images/Ubuntu-image.PNG"
+             style="width: 1500px; height:200px" alt="...">
+        </p>
+        <p>
+        <h6><strong>3. Run the ubuntu docker image</strong></h6>
+        <pre>docker run -it ubuntu:latest /bin/bash</pre>
+        <img src="./images/docker-run.PNG"
+             style="width: 1500px; height:100px" alt="...">
+        </p>
+        <p>
+        <h6><strong>4. Install apache2</strong></h6>
+        <pre>apt-get install apache2</pre>
+        <img src="./images/Insatlled_Apache2.PNG"
+             style="width: 1500px; height:300px" alt="...">
+        </p>
+        <p>
+        <h6><strong>5. Install vim editor</strong></h6>
+        <pre>apt-get install vim</pre>
+        <img src="./images/Vim-install.PNG"
+             style="width: 1500px; height:200px" alt="...">
+        </p>
+        <p>
+        <h5><strong>Configuring the Web server</strong></h5>
+        Actually the server is already been configured and now its the time to update or make a website over this
+        server.Server website can be accessed using the IP address of the host.
+        Setup website.
+        <h6><strong>1. Share the data between Docker container and Host</strong></h6>
+        Using following command we can share the data between docker container and host.
+        <pre>docker run -it -p 127.0.0.1:80:80 -v F:\Docker_tutorial\local_dir:/var/www/html ubuntu-my_apache2 /bin/bash</pre>
+        <ul>
+            <li>-it : log into an interactive shell</li>
+            <li> -p : expose an port of Docker container</li>
+            <li> -v : bind a host directory to Docker container</li>
+        </ul>
+        <img src="./images/path_between_container&Host.PNG"
+             style="width: 1500px; height:50px" alt="...">
+        </p>
+        <p>
+            <h6><strong>2. vi Editor in UNIX</strong></h6>
+            Go to html directory and create an index.html file using following commands.
+            <pre>cd /var/www/html</pre>
+            <img src="./images/go_to_index_html.PNG"
+             style="width: 1500px; height:100px" alt="..."><br><br>
+            <pre>vi index.html</pre>
+            <img src="./images/html_file.PNG"
+             style="width: 1500px; height:400px" alt="...">
+        </p>
+        <p>
+            <h5><strong>Start the server</strong></h5>
+            <pre>/etc/init.d/apache2 restart</pre>
+            <img src="./images/Restart_apache2.PNG"
+             style="width: 1500px; height:100px" alt="..."><br><br>
+            <img src="./images/website_host.PNG"
+             style="width: 1500px; height:500px" alt="...">
 
-<!--        </p>-->
-<!--        <hr>-->
-<!--    </div>-->
-<!--</div>-->
+        </p>
+        <hr>
+    </div>
+</div>
 
 <div class="bg-dark" style="width: 100%">
     <footer class="container" style="width: 100%">
