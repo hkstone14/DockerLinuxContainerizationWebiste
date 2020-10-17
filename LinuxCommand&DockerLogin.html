@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .class-card_div-margin {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .class-card-top-margin {
+            margin-top: 2%;
+        }
+
+        .class-img-margin {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        pre {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            color: rgba(0, 0, 0, .9);
+            font-family: Consolas, monospace;
+            margin-bottom: 10px;
+            overflow: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="bg-dark">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Internet Invention.html">Invention</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Browser Wars.html">Browser Wars</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Internet Search.html">Internet Search</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="DotcomBubble.html">Dotcom Bubble</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="People Part.html">People Part</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Internet Website History.html">Website History</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="People Part.html">Team</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="About.html">About us</a>
+        </li>
+    </ul>
+</div>
+<hr>
+<!--<div>-->
+<!--    <div class="class-img-margin">-->
+<!--        <img src="https://linuxinsider.com/wp-content/uploads/sites/2/2020/01/xl-2017-linux-1.jpg"-->
+<!--             style="width: 1500px; height:400px" alt="...">-->
+<!--    </div>-->
+<!--    <br>-->
+<!--    <div class="class-card_div-margin">-->
+<!--        <h1>Basic Linux Commands</h1>-->
+<!--        <hr>-->
+<!--        <p>-->
+<!--        <h5><strong>1. pwd</strong></h5>-->
+<!--        When you first open the terminal, you are in the home directory of your user. To know which directory you are-->
+<!--        in, you can use the “pwd” command. It gives us the absolute path, which means the path that starts from the-->
+<!--        root. The root is the base of the Linux file system. It is denoted by a forward slash( / ). The user directory-->
+<!--        is usually something like "/home/username.<br>-->
+<!--        </p>-->
+<!--        <p>-->
+<!--        <h5><strong>2. ls</strong></h5>-->
+<!--        Use the "ls" command to know what files are in the directory you are in. You can see all the hidden files by-->
+<!--        using the command “ls -a.<br>-->
+<!--        </p>-->
+<!--        <p>-->
+<!--        <h5><strong>3. cd</strong></h5>-->
+<!--        Use the "cd" command to go to a directory. For example, if you are in the home folder, and you want to go to the-->
+<!--        downloads folder, then you can type in “cd Downloads”. Remember, this command is case sensitive, and you have to-->
+<!--        type in the name of the folder exactly as it is. But there is a problem with these commands. Imagine you have a-->
+<!--        folder named “Raspberry Pi”. In this case, when you type in “cd Raspberry Pi”, the shell will take the second-->
+<!--        argument of the command as a different one, so you will get an error saying that the directory does not exist.-->
+<!--        Here, you can use a backward slash. That is, you can use “cd Raspberry\ Pi” in this case. Spaces are denoted-->
+<!--        like this: If you just type “cd” and press enter, it takes you to the home directory. To go back from a folder-->
+<!--        to the folder before that, you can type “cd ..” . The two dots represent back.-->
+<!--        </p>-->
+<!--        <p>-->
+<!--        <h5><strong>4.mkdir & rmdir</strong></h5>-->
+<!--        Use the mkdir command when you need to create a folder or a directory. For example, if you want to make a-->
+<!--        directory called “DIY”, then you can type “mkdir DIY”. Remember, as told before, if you want to create a-->
+<!--        directory named “DIY Hacking”, then you can type “mkdir DIY\ Hacking”. Use rmdir to delete a directory. But-->
+<!--        rmdir can only be used to delete an empty directory. To delete a directory containing files, use rm.-->
+<!--        </p>-->
+<!--        <p>-->
+<!--        <h5><strong>5. rm</strong></h5>-->
+<!--        Use the rm command to delete files and directories. Use "rm -r" to delete just the directory. It deletes both-->
+<!--        the folder and the files it contains when using only the rm command-->
+<!--        </p>-->
+<!--        <p>-->
+<!--        <h5><strong>6. touch</strong></h5>-->
+<!--        The touch command is used to create a file. It can be anything, from an empty txt file to an empty zip file. For-->
+<!--        example, “touch myfile.txt.-->
+<!--        </p>-->
+<!--        <p>-->
+<!--        <h5><strong>7. man & &#45;&#45;help</strong></h5>-->
+<!--        To know more about a command and how to use it, use the man command. It shows the manual pages of the command.-->
+<!--        For example, “man cd” shows the manual pages of the cd command. Typing in the command name and the argument-->
+<!--        helps it show which ways the command can be used (e.g., cd –help).-->
+<!--        </p>-->
+<!--        <p>-->
+<!--        <h5><strong>8. cp</strong></h5>-->
+<!--        Use the cp command to copy files through the command line. It takes two arguments: The first is the location of-->
+<!--        the file to be copied, the second is where to copy.-->
+<!--        </p>-->
+<!--        <p>-->
+<!--        <h5><strong>9. mv</strong></h5>-->
+<!--        Use the mv command to move files through the command line. We can also use the mv command to rename a file. For-->
+<!--        example, if we want to rename the file “text” to “new”, we can use “mv text new”. It takes the two arguments,-->
+<!--        just like the cp command.-->
+<!--        </p>-->
+<!--        <p>-->
+<!--        <h5><strong>10. nano,vi</strong></h5>-->
+<!--        nano and vi are already installed text editors in the Linux command line. The nano command is a good text editor-->
+<!--        that denotes keywords with color and can recognize most languages. And vi is simpler than nano. You can create a-->
+<!--        new file or modify a file using this editor. For example, if you need to make a new file named "check.txt", you-->
+<!--        can create it by using the command “nano check.txt”. You can save your files after editing by using the sequence-->
+<!--        Ctrl+X, then Y (or N for no).-->
+<!--        </p>-->
+
+<!--        <hr>-->
+<!--    </div>-->
+<!--    <div class="class-card_div-margin">-->
+<!--        <h1>How to log into Docker Container</h1>-->
+<!--        For this tutorial we will use tomcat as a base image fo the container.Below are the steps to log into the tomcat container.<br><br>-->
+<!--        <p>-->
+<!--        <h5><strong>1. Pull an image of tomcat container from Dockerhub</strong></h5>-->
+<!--        <pre>docker pull tomcat:latest</pre>-->
+<!--         <img src="./images/tomcat-pull.PNG"-->
+<!--             style="width: 1500px; height:400px" alt="...">-->
+<!--        </p>-->
+<!--        <p>-->
+<!--            <h5><strong>2. Run the tomcat image and give it to name:Webserver</strong></h5>-->
+<!--            <pre>docker run -d &#45;&#45;name webserver tomcat</pre>-->
+<!--            <img src="./images/tomcat-rename.PNG"-->
+<!--             style="width: 1500px; height:100px" alt="...">-->
+<!--        </p>-->
+<!--        <p>-->
+<!--            <h5><strong>3. Find an existing image</strong></h5>-->
+<!--            <pre>docker ps</pre>-->
+<!--            <img src="./images/tomcat-ps.PNG"-->
+<!--             style="width: 1500px; height:100px" alt="...">-->
+<!--        </p>-->
+<!--        <p>-->
+<!--            <h5><strong>4. Log in to the container using container name or ID</strong></h5>-->
+<!--            <pre>docker exec -it webserver /bin/bash</pre>-->
+<!--            <img src="./images/container-login.PNG"-->
+<!--             style="width: 1500px; height:150px" alt="...">-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</div>-->
+<hr>
+<div class="bg-dark" style="width: 100%">
+    <footer class="container" style="width: 100%">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p class="text-white">&copy; 2020 Company, Inc. &middot; Privacy &middot; Terms
+        </p>
+    </footer>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
